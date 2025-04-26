@@ -35,7 +35,7 @@ except Exception as e:
 
 print(os.getenv("MONGO_DB_URL"))
 
-client = MongoClient(os.getenv("MONGO_DB_URL"))
+# client = MongoClient(os.getenv("MONGO_DB_URL"))
 db = client["inaturalist-token"]
 tokens_collection = db["tokens"]
 
